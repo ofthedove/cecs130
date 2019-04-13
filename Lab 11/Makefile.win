@@ -1,0 +1,57 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.4.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = Combs_2_Lab11_private.res
+OBJ      = Cursor.o GameBoard.o main.o Player.o PlayerAI1.o PlayerHuman.o TTTLib.o PlayerAIAndrew.o PlayerAIJohn.o $(RES)
+LINKOBJ  = Cursor.o GameBoard.o main.o Player.o PlayerAI1.o PlayerHuman.o TTTLib.o PlayerAIAndrew.o PlayerAIJohn.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+BIN      = Combs_2_Lab11.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Cursor.o: Cursor.cpp
+	$(CPP) -c Cursor.cpp -o Cursor.o $(CXXFLAGS)
+
+GameBoard.o: GameBoard.cpp
+	$(CPP) -c GameBoard.cpp -o GameBoard.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Player.o: Player.cpp
+	$(CPP) -c Player.cpp -o Player.o $(CXXFLAGS)
+
+PlayerAI1.o: PlayerAI1.cpp
+	$(CPP) -c PlayerAI1.cpp -o PlayerAI1.o $(CXXFLAGS)
+
+PlayerHuman.o: PlayerHuman.cpp
+	$(CPP) -c PlayerHuman.cpp -o PlayerHuman.o $(CXXFLAGS)
+
+TTTLib.o: TTTLib.cpp
+	$(CPP) -c TTTLib.cpp -o TTTLib.o $(CXXFLAGS)
+
+PlayerAIAndrew.o: PlayerAIAndrew.cpp
+	$(CPP) -c PlayerAIAndrew.cpp -o PlayerAIAndrew.o $(CXXFLAGS)
+
+PlayerAIJohn.o: PlayerAIJohn.cpp
+	$(CPP) -c PlayerAIJohn.cpp -o PlayerAIJohn.o $(CXXFLAGS)
+
+Combs_2_Lab11_private.res: Combs_2_Lab11_private.rc 
+	$(WINDRES) -i Combs_2_Lab11_private.rc --input-format=rc -o Combs_2_Lab11_private.res -O coff 

@@ -1,0 +1,33 @@
+--- Ships Log ---
+USS ________ (Mom's Name)
+Captain _________(Your Name) Commanding
+Stardate ________(rand)
+
+We're starting out on a long haul to the __________ (rand) . Unfortunately we 
+won't be able to enjoy any _______ (favorite color) ________ (favorite fruit) 
+drinks because ______ (rand) ________ (Friend's name) broke the machine and we can't
+replace it till we get to Starbase _____ (favorite number) . Anyway, there's 
+not much else to report. Now to _____ (rand) ______ (pet's name) ...
+
+--- End Log ---
+
+
+
+
+Ranks: 
+
+Cadet
+Yoeman
+Ensign
+Lueitenant
+Lueitenant Commandar
+Commandar
+
+Locations:
+
+the Madusa Cascade
+Deep Space 9
+Babylon 5
+Kobol
+Miranda
+Earth

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Project1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="Combs_2_Lab11" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Unit filename="Cursor.cpp" />
+		<Unit filename="Cursor.h" />
+		<Unit filename="GameBoard.cpp" />
+		<Unit filename="GameBoard.h" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.h" />
+		<Unit filename="PlayerAI1.cpp" />
+		<Unit filename="PlayerAI1.h" />
+		<Unit filename="PlayerAIAndrew.cpp" />
+		<Unit filename="PlayerAIAndrew.h" />
+		<Unit filename="PlayerAIJohn.cpp" />
+		<Unit filename="PlayerAIJohn.h" />
+		<Unit filename="PlayerHuman.cpp" />
+		<Unit filename="PlayerHuman.h" />
+		<Unit filename="TTTLib.cpp" />
+		<Unit filename="TTTLib.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

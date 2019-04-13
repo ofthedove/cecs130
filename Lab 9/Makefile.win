@@ -1,0 +1,41 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.4.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Combs_2_Lab9.o GameBoard.o Player.o PlayerAI1.o PlayerHuman.o
+LINKOBJ  = Combs_2_Lab9.o GameBoard.o Player.o PlayerAI1.o PlayerHuman.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+BIN      = Combs_2_Lab9.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Combs_2_Lab9.o: Combs_2_Lab9.cpp
+	$(CC) -c Combs_2_Lab9.cpp -o Combs_2_Lab9.o $(CFLAGS)
+
+GameBoard.o: GameBoard.cpp
+	$(CC) -c GameBoard.cpp -o GameBoard.o $(CFLAGS)
+
+Player.o: Player.cpp
+	$(CC) -c Player.cpp -o Player.o $(CFLAGS)
+
+PlayerAI1.o: PlayerAI1.cpp
+	$(CC) -c PlayerAI1.cpp -o PlayerAI1.o $(CFLAGS)
+
+PlayerHuman.o: PlayerHuman.cpp
+	$(CC) -c PlayerHuman.cpp -o PlayerHuman.o $(CFLAGS)
